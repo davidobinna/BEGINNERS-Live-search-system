@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Live search system</title>
+<script type="text/javascript" src="./bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./bootstrap/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="./bootstrap/bootstrap/css/bootstrap.min.css">
+<style media="screen">
+  
+</style>
+  </head>
+  <body class="bg-info">
+    <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-8 mx-auto bg-light rounded p-4">
+   <h5 class="text-center font-weight-bold">Live-Search Prediction using Ajax, Bootstrap, PHP, PDO and MYSQL </h5>
+   <hr class="my-1">
+   <h5 class="text-center text-secondary">Write any country in the search box</h5>
+     <form class="p-3" action="details.php" method="post">
+      <!-- The search result will be submitted  to details.php, which shows an associate array array of the searched item-->
+    <div class="input-group">
+       <input type="text" name="search" id="search" class="form-control form-control-lg rounded-1 border-info" placeholder="Search..." autocomplete="off" required>
+       <div class="input-group-append">
+        <input type="submit" name="submit" value="Search" class="btn btn-info btn-lg rounded-0" >
+       </div>
+    </div>
+     </form>
+      </div>
+      <div class="col-md-5" style="position: relative; margin-top: -38px;margin-left: 21px;">
+       <div class="list-group" id="show-list">
+          <!-- Here autocomplete list will be display -->
+
+       </div>
+      </div>
+    </div>
+    </div>
+    <!--Here the javascrite ajax code is emdded-->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
